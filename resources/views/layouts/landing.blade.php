@@ -761,6 +761,7 @@
 
         .faq .section-header h2 { color: var(--white) }
         .faq .section-header p { color: rgba(255, 255, 255, .7) }
+        .faq .section-label { color: var(--gold) }
 
         .faq-list { max-width: 800px; margin: 0 auto }
 
