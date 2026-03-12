@@ -179,7 +179,7 @@
 .stl-timeline::before {
     content: '';
     position: absolute;
-    left: 35px;
+    left: 34px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -525,11 +525,12 @@
     .stl-features-card { padding: 32px 24px; }
     .stl-cta-card { padding: 40px 24px; }
     .stl-timeline { padding-left: 70px; }
+    .stl-timeline::before { left: 27px; }
     .stl-timeline-number { width: 56px; height: 56px; font-size: 1.25rem; left: -70px; }
 }
 @@media (max-width: 480px) {
     .stl-timeline { padding-left: 60px; }
-    .stl-timeline::before { left: 25px; }
+    .stl-timeline::before { left: 24px; }
     .stl-timeline-number { width: 50px; height: 50px; font-size: 1.1rem; left: -60px; }
 }
 </style>
