@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+
+    --color-burgundy: #800020;
+    --color-burgundy-dark: #600018;
+    --color-gold: #C9A962;
+    --color-gold-dark: #988358;
+    --color-cream: #FAF7F0;
+    --color-charcoal: #1a1a1f;
+}
