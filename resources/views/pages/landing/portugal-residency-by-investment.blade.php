@@ -133,7 +133,7 @@
 </div></div>
 <x-landing-form
                 source="portugal-residency-by-investment"
-                consultancy="portugal-residency-by-investment"
+                consultancy="portugal-golden-visa"
                 title="Check Eligibility for Portugal Residency Programs"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>

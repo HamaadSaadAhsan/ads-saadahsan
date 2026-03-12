@@ -150,7 +150,7 @@
             </div>
             <x-landing-form
                 source="investment-citizenship"
-                consultancy="investment-citizenship"
+                consultancy="citizenship-by-investment"
                 title="Check Eligibility for Investment Citizenship Programs"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form>

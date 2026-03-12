@@ -488,7 +488,7 @@
             </div>
             <x-landing-form
                 source="second-passport"
-                consultancy="second-passport"
+                consultancy="citizenship-by-investment"
                 title="Request Details About Legal Second Citizenship Options"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Request Details</x-landing-form>

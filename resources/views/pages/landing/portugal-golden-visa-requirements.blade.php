@@ -123,7 +123,7 @@
 </div></div>
 <x-landing-form
                 source="portugal-golden-visa-requirements"
-                consultancy="portugal-golden-visa-requirements"
+                consultancy="portugal-golden-visa"
                 title="Check Eligibility Under Current Portugal Golden Visa Rules"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>

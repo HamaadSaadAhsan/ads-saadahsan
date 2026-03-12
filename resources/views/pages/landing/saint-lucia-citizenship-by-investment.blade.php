@@ -563,7 +563,7 @@
             </div>
             <x-landing-form
                 source="saint-lucia-citizenship-by-investment"
-                consultancy="saint-lucia-citizenship-by-investment"
+                consultancy="st-lucia-citizenship-by-investment"
                 title="Check Eligibility for the Saint Lucia Citizenship Program"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form>

@@ -709,7 +709,7 @@
                 </div>
                 <x-landing-form
                     source="second-citizenship-by-investment"
-                    consultancy="second-citizenship-by-investment"
+                    consultancy="citizenship-by-investment"
                     title="Request Information About Dual Nationality Investment Programs"
                     subtitle="Share your details and our experts will assess your eligibility."
                 >Request Information

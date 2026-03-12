@@ -616,7 +616,7 @@
             </div>
             <x-landing-form
                 source="dominica-citizenship"
-                consultancy="dominica-citizenship"
+                consultancy="dominica-citizenship-by-investment"
                 title="Check Eligibility for Legal Citizenship Pathways in Dominica"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form>

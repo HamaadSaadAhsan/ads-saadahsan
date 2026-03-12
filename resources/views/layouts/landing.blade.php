@@ -20,6 +20,24 @@
     </noscript>
     @stack('preload')
     <style>
+        @font-face {
+            font-family: 'Cormorant Garamond Fallback';
+            src: local('Georgia'), local('Times New Roman');
+            size-adjust: 112%;
+            ascent-override: 95%;
+            descent-override: 22%;
+            line-gap-override: 0%
+        }
+
+        @font-face {
+            font-family: 'DM Sans Fallback';
+            src: local('Arial'), local('Helvetica');
+            size-adjust: 105%;
+            ascent-override: 93%;
+            descent-override: 25%;
+            line-gap-override: 0%
+        }
+
         :root {
             --burgundy: #800020;
             --burgundy-dark: #5a0016;
@@ -48,7 +66,7 @@
         }
 
         body {
-            font-family: 'DM Sans', system-ui, sans-serif;
+            font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
             line-height: 1.7;
             color: var(--text-dark);
             background: var(--cream);
@@ -56,7 +74,7 @@
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback', Georgia, serif;
             font-weight: 600;
             line-height: 1.2;
             letter-spacing: -0.02em
@@ -170,7 +188,7 @@
             gap: 10px;
             padding: 14px 28px;
             border-radius: 50px;
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
             font-weight: 600;
             font-size: 14px;
             letter-spacing: .5px;
@@ -310,7 +328,7 @@
         .hero h1 span { color: var(--gold) }
 
         .hero-subtitle {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback', Georgia, serif;
             font-size: 1.5rem;
             font-weight: 500;
             font-style: italic;
@@ -362,7 +380,7 @@
         .hero-stat { text-align: left }
 
         .hero-stat-value {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback', Georgia, serif;
             font-size: 2.75rem;
             font-weight: 700;
             color: var(--gold);
@@ -471,7 +489,7 @@
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: var(--gold-dark);
+            color: #7a6a45;
             margin-bottom: 16px;
             position: relative
         }
@@ -571,7 +589,7 @@
             padding: 12px 14px;
             border: 2px solid rgba(152, 131, 88, .2);
             border-radius: 10px;
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
             font-size: 14px;
             color: var(--text-dark);
             background: var(--cream);
@@ -759,7 +777,7 @@
 
         .faq-question {
             padding: 24px 30px;
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback', Georgia, serif;
             font-size: 1.25rem;
             font-weight: 600;
             color: var(--white);

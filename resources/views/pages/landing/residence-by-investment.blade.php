@@ -126,7 +126,7 @@
 </div></div>
 <x-landing-form
                 source="residence-by-investment"
-                consultancy="residence-by-investment"
+                consultancy="residency-by-investment"
                 title="Check Eligibility for Legal Residence Pathways"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>

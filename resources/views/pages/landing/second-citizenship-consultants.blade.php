@@ -106,7 +106,7 @@
 </div></div>
 <x-landing-form
                 source="second-citizenship-consultants"
-                consultancy="second-citizenship-consultants"
+                consultancy="citizenship-by-investment"
                 title="Schedule a Consultation With a Second Citizenship Advisor"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Schedule a Consultation</x-landing-form></div></div></section>

@@ -98,7 +98,7 @@
 </div></div>
 <x-landing-form
                 source="citizenship-invest"
-                consultancy="citizenship-invest"
+                consultancy="citizenship-by-investment"
                 title="Check Eligibility to Invest for Citizenship"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>

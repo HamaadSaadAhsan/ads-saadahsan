@@ -709,7 +709,7 @@
                 </div>
                 <x-landing-form
                     source="second-passport-by-investment"
-                    consultancy="second-passport-by-investment"
+                    consultancy="citizenship-by-investment"
                     title="Request Information About Government-Approved Citizenship Programs"
                     subtitle="Share your details and our experts will assess your eligibility."
                 >Request Information

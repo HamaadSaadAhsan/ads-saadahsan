@@ -1,7 +1,7 @@
 @props(['source', 'consultancy', 'title' => 'Check Your Eligibility', 'subtitle' => 'Share your details and our experts will assess your eligibility.'])
 
 <div class="hero-form">
-    <h3 class="form-title">{{ $title }}</h3>
+    <h2 class="form-title">{{ $title }}</h2>
     <p class="form-subtitle">{{ $subtitle }}</p>
     <form id="landing-form"
           x-data="{

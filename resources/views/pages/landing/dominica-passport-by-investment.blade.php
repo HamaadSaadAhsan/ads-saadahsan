@@ -548,7 +548,7 @@
             </div>
             <x-landing-form
                 source="dominica-passport-by-investment"
-                consultancy="dominica-passport-by-investment"
+                consultancy="dominica-citizenship-by-investment"
                 title="Request Information About the Dominica Passport by Investment Program"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Request Information</x-landing-form>

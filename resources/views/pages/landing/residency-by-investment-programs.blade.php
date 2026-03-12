@@ -121,7 +121,7 @@
 </div></div>
 <x-landing-form
                 source="residency-by-investment-programs"
-                consultancy="residency-by-investment-programs"
+                consultancy="residency-by-investment"
                 title="Check Eligibility for Legal Residency Options"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>

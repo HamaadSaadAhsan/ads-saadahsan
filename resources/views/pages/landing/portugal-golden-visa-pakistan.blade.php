@@ -132,7 +132,7 @@
 </div></div>
 <x-landing-form
                 source="portugal-golden-visa-pakistan"
-                consultancy="portugal-golden-visa-pakistan"
+                consultancy="portugal-golden-visa"
                 title="Check Eligibility for Portugal Residency by Investment"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
