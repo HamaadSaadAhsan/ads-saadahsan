@@ -28,7 +28,7 @@
 .scc-hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
 .scc-hero h1{color:var(--white);font-size:clamp(2.6rem,5vw,3.8rem);line-height:1.1;margin-bottom:16px}
 .scc-hero h1 span{display:block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.scc-hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
+.scc-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .scc-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .scc-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
 .scc-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:all .3s ease}
@@ -43,8 +43,8 @@
 .scc-service-list{max-width:760px;margin:0 auto}
 .scc-service-item{display:flex;align-items:flex-start;gap:20px;padding:24px 0;border-bottom:1px solid rgba(152,131,88,.12)}
 .scc-service-item:last-child{border-bottom:none}
-.scc-service-num{flex-shrink:0;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy),var(--burgundy-dark));border-radius:14px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--white)}
-.scc-service-content h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:4px}
+.scc-service-num{flex-shrink:0;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy),var(--burgundy-dark));border-radius:14px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--white)}
+.scc-service-content h3{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:4px}
 .scc-service-content p{font-size:14px;color:var(--text-muted);line-height:1.6;margin:0}
 
 /* Why Work With */
@@ -77,7 +77,7 @@
 .scc-faq-list{max-width:800px;margin:0 auto}
 .scc-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .scc-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.scc-faq-question{padding:24px 30px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.scc-faq-question:hover{color:var(--burgundy)}
+.scc-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.scc-faq-question:hover{color:var(--burgundy)}
 .scc-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
 .scc-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
 .scc-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}

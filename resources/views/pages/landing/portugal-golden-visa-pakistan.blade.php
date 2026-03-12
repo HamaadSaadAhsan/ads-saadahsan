@@ -28,7 +28,7 @@
 .pgp-hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
 .pgp-hero h1{color:var(--white);font-size:clamp(2.6rem,5vw,3.8rem);line-height:1.1;margin-bottom:16px}
 .pgp-hero h1 span{display:block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.pgp-hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
+.pgp-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .pgp-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .pgp-route{display:flex;align-items:center;gap:16px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
 .pgp-route-node{display:flex;flex-direction:column;align-items:center;gap:8px;flex:0 0 auto}
@@ -51,8 +51,8 @@
 .pgp-step-content::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));opacity:0;transition:opacity .3s ease;border-radius:0 0 20px 20px}
 .pgp-step-content:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.07)}
 .pgp-step-content:hover::after{opacity:1}
-.pgp-step-marker{flex-shrink:0;width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy),#5a0016);border-radius:50%;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--white);z-index:1;box-shadow:0 4px 16px rgba(128,0,32,.3)}
-.pgp-step-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
+.pgp-step-marker{flex-shrink:0;width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy),#5a0016);border-radius:50%;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--white);z-index:1;box-shadow:0 4px 16px rgba(128,0,32,.3)}
+.pgp-step-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
 .pgp-eligible{padding:100px 0;background:var(--cream);position:relative;overflow:hidden}
 .pgp-eligible::before{content:'';position:absolute;top:-100px;right:-100px;width:360px;height:360px;background:radial-gradient(circle,rgba(128,0,32,.04) 0%,transparent 70%);border-radius:50%}
 .pgp-eligible-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
@@ -92,7 +92,7 @@
 .pgp-faq-list{max-width:800px;margin:0 auto}
 .pgp-faq-item{background:var(--cream);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .pgp-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.pgp-faq-question{padding:24px 30px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}
+.pgp-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}
 .pgp-faq-question:hover{color:var(--burgundy)}
 .pgp-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--white);border-radius:50%;transition:all .3s ease}
 .pgp-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}

@@ -28,7 +28,7 @@
 .pgr-hero-badge::before{content:'';width:18px;height:2px;background:var(--gold)}
 .pgr-hero h1{color:var(--white);font-size:clamp(2.6rem,5vw,3.8rem);line-height:1.1;margin-bottom:16px}
 .pgr-hero h1 span{display:block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.pgr-hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
+.pgr-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .pgr-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .pgr-hero-markers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
 .pgr-marker{padding:18px 14px;background:rgba(201,169,98,.05);border-left:3px solid var(--gold);transition:all .3s ease}
@@ -54,9 +54,9 @@
 .pgr-check-card{background:var(--white);border-radius:16px;padding:32px 24px;border:1px solid rgba(152,131,88,.1);position:relative;transition:all .4s ease;overflow:hidden}
 .pgr-check-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
 .pgr-check-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}.pgr-check-card:hover::before{transform:scaleX(1)}
-.pgr-check-num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:2px solid var(--gold);border-radius:50%;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:18px;transition:all .3s ease}
+.pgr-check-num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:2px solid var(--gold);border-radius:50%;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:18px;transition:all .3s ease}
 .pgr-check-card:hover .pgr-check-num{background:var(--gold);color:var(--charcoal)}
-.pgr-check-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--charcoal);margin-bottom:8px;line-height:1.3}
+.pgr-check-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.05rem;font-weight:600;color:var(--charcoal);margin-bottom:8px;line-height:1.3}
 .pgr-check-desc{font-size:13px;color:var(--text-muted);line-height:1.6;margin:0}
 .pgr-docs{padding:100px 0;background:var(--white)}
 .pgr-docs-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -77,7 +77,7 @@
 .pgr-maintain-card::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));border-radius:3px;opacity:0;transition:all .3s ease}
 .pgr-maintain-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}.pgr-maintain-card:hover::after{opacity:1;width:60px}
 .pgr-maintain-icon{width:52px;height:52px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:14px}.pgr-maintain-icon svg{width:24px;height:24px;color:var(--charcoal)}
-.pgr-maintain-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--charcoal);margin-bottom:8px}
+.pgr-maintain-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.1rem;font-weight:600;color:var(--charcoal);margin-bottom:8px}
 .pgr-maintain-desc{font-size:14px;color:var(--text-muted);line-height:1.65;margin:0}
 .pgr-maintain-note{text-align:center;margin-top:36px;font-size:15px;color:var(--text-muted);line-height:1.75}
 .pgr-eligible{padding:100px 0;background:var(--white)}
@@ -93,7 +93,7 @@
 .pgr-faq-list{max-width:800px;margin:0 auto}
 .pgr-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .pgr-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.pgr-faq-question{padding:24px 30px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.pgr-faq-question:hover{color:var(--burgundy)}
+.pgr-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.pgr-faq-question:hover{color:var(--burgundy)}
 .pgr-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
 .pgr-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
 .pgr-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}

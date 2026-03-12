@@ -28,7 +28,7 @@
 .rbi-hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
 .rbi-hero h1{color:var(--white);font-size:clamp(2.8rem,5.5vw,4.2rem);line-height:1.1;margin-bottom:16px}
 .rbi-hero h1 span{display:block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.rbi-hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
+.rbi-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .rbi-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .rbi-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
 .rbi-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:all .3s ease}
@@ -52,17 +52,17 @@
 .rbi-timeline{max-width:800px;margin:0 auto;position:relative}
 .rbi-timeline::before{content:'';position:absolute;left:28px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--burgundy))}
 .rbi-step{display:flex;gap:28px;align-items:flex-start;padding:24px 0;position:relative}
-.rbi-step-num{flex-shrink:0;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--white);border:2px solid var(--gold);border-radius:50%;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--burgundy);position:relative;z-index:1;transition:all .3s ease}
+.rbi-step-num{flex-shrink:0;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--white);border:2px solid var(--gold);border-radius:50%;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--burgundy);position:relative;z-index:1;transition:all .3s ease}
 .rbi-step:hover .rbi-step-num{background:linear-gradient(135deg,var(--burgundy),#600018);color:var(--white);border-color:var(--burgundy)}
 .rbi-step-content{background:var(--white);border-radius:16px;padding:24px 28px;flex:1;border:1px solid rgba(152,131,88,.1);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .rbi-step:hover .rbi-step-content{box-shadow:0 12px 32px rgba(0,0,0,.08);border-color:rgba(152,131,88,.25)}
-.rbi-step-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
+.rbi-step-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
 .rbi-compare{padding:100px 0;background:var(--white);position:relative;overflow:hidden}
 .rbi-compare::after{content:'';position:absolute;bottom:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(128,0,32,.04) 0%,transparent 70%);border-radius:50%}
 .rbi-compare .section-header{text-align:center;max-width:680px;margin:0 auto 60px}.rbi-compare .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .rbi-compare-card{max-width:860px;margin:0 auto;background:var(--cream);border-radius:24px;overflow:hidden;border:1px solid rgba(152,131,88,.12);box-shadow:0 20px 60px rgba(0,0,0,.06)}
 .rbi-compare-header{display:grid;grid-template-columns:1fr 1fr 1fr;background:linear-gradient(135deg,var(--charcoal) 0%,#2a2a30 100%)}
-.rbi-compare-header-cell{padding:24px 20px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--white)}
+.rbi-compare-header-cell{padding:24px 20px;text-align:center;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.1rem;font-weight:600;color:var(--white)}
 .rbi-compare-header-cell:first-child{text-align:left;padding-left:32px;color:var(--gold)}
 .rbi-compare-header-cell:nth-child(2){border-left:1px solid rgba(255,255,255,.1);border-right:1px solid rgba(255,255,255,.1)}
 .rbi-compare-row{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(152,131,88,.1)}
@@ -79,7 +79,7 @@
 .rbi-feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--burgundy));opacity:0;transition:opacity .3s ease}
 .rbi-feature-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}.rbi-feature-card:hover::before{opacity:1}
 .rbi-feature-icon{width:52px;height:52px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy) 0%,#600018 100%);border-radius:14px}.rbi-feature-icon svg{width:24px;height:24px;color:var(--white)}
-.rbi-feature-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
+.rbi-feature-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.1rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
 .rbi-feature-note{max-width:680px;margin:32px auto 0;text-align:center;font-size:14px;color:var(--text-muted);font-style:italic;line-height:1.7}
 .rbi-eligibility{padding:100px 0;background:var(--white)}
 .rbi-eligibility-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -96,7 +96,7 @@
 .rbi-faq-list{max-width:800px;margin:0 auto}
 .rbi-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .rbi-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.rbi-faq-question{padding:24px 30px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.rbi-faq-question:hover{color:var(--burgundy)}
+.rbi-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.rbi-faq-question:hover{color:var(--burgundy)}
 .rbi-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
 .rbi-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
 .rbi-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
