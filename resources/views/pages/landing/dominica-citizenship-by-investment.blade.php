@@ -130,7 +130,7 @@
     background: rgba(201,169,98,.06);
     border: 1px solid rgba(201,169,98,.12);
     border-radius: 20px;
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .dom-highlight:hover {
     background: rgba(201,169,98,.12);
@@ -195,7 +195,7 @@
     background: var(--cream);
     border-radius: 20px;
     border: 1px solid rgba(152,131,88,.1);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .dom-zigzag-content:hover {
     box-shadow: 0 12px 32px rgba(0,0,0,.08);
@@ -219,7 +219,7 @@
     color: var(--burgundy);
     z-index: 1;
     margin: 0 auto;
-    transition: all .4s ease;
+    transition: color .4s ease, background .4s ease, border-color .4s ease, transform .4s ease, box-shadow .4s ease, opacity .4s ease;
 }
 .dom-zigzag-step:hover .dom-zigzag-number {
     background: var(--burgundy);
@@ -403,7 +403,7 @@
     margin-bottom: 16px;
     overflow: hidden;
     border: 1px solid rgba(201,169,98,.1);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .dom-faq-item:hover { border-color: rgba(201,169,98,.3); }
 .dom-faq-question {
@@ -426,7 +426,7 @@
     position: relative;
     background: rgba(201,169,98,.1);
     border-radius: 50%;
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .dom-faq-toggle::before {
     content: '';
@@ -443,7 +443,7 @@
     width: 2px; height: 14px;
     background: var(--gold);
     transform: translate(-50%, -50%);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .dom-faq-item.active .dom-faq-toggle {
     background: var(--gold);

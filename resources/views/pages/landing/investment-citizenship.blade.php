@@ -43,7 +43,7 @@
 .icz-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .icz-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .icz-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
-.icz-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:all .3s ease}
+.icz-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .icz-highlight:hover{background:rgba(201,169,98,.12);border-color:rgba(201,169,98,.25);transform:translateY(-3px)}
 .icz-highlight-icon{width:44px;height:44px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:12px}
 .icz-highlight-icon svg{width:22px;height:22px;color:var(--charcoal)}
@@ -54,7 +54,7 @@
 .icz-process .section-header{text-align:center;max-width:680px;margin:0 auto 60px}
 .icz-process .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .icz-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto}
-.icz-card{background:var(--cream);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:all .4s ease;position:relative;overflow:hidden}
+.icz-card{background:var(--cream);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;position:relative;overflow:hidden}
 .icz-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));opacity:0;transition:opacity .3s ease}
 .icz-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}
 .icz-card:hover::after{opacity:1}
@@ -98,13 +98,13 @@
 .icz-faq .section-header{text-align:center;max-width:680px;margin:0 auto 60px}
 .icz-faq .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .icz-faq-list{max-width:800px;margin:0 auto}
-.icz-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.icz-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .icz-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .icz-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}
 .icz-faq-question:hover{color:var(--burgundy)}
-.icz-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
+.icz-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .icz-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
-.icz-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
+.icz-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .icz-faq-item.active .icz-faq-toggle{background:var(--burgundy);transform:rotate(45deg)}
 .icz-faq-item.active .icz-faq-toggle::before,.icz-faq-item.active .icz-faq-toggle::after{background:var(--white)}
 .icz-faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}

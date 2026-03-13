@@ -44,7 +44,7 @@
 .pgv-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .pgv-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:12px}
 .pgv-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;padding-top:32px;border-top:1px solid rgba(201,169,98,.15)}
-.pgv-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:all .3s ease}
+.pgv-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pgv-highlight:hover{background:rgba(201,169,98,.12);border-color:rgba(201,169,98,.25);transform:translateY(-3px)}
 .pgv-highlight-icon{width:44px;height:44px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:12px}
 .pgv-highlight-icon svg{width:22px;height:22px;color:var(--charcoal)}
@@ -56,7 +56,7 @@
 .pgv-process .pgv-section-header h2{color:var(--charcoal);margin-bottom:16px}
 .pgv-process .pgv-section-header p{color:var(--text-muted);font-size:1rem;line-height:1.75}
 .pgv-cascade{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1100px;margin:0 auto}
-.pgv-cascade-card{background:var(--cream);border:1px solid rgba(152,131,88,.12);border-radius:20px;padding:36px 28px;position:relative;overflow:hidden;transition:all .4s ease}
+.pgv-cascade-card{background:var(--cream);border:1px solid rgba(152,131,88,.12);border-radius:20px;padding:36px 28px;position:relative;overflow:hidden;transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease}
 .pgv-cascade-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--burgundy),var(--gold));opacity:.5;transition:opacity .4s ease}
 .pgv-cascade-card:hover{transform:translateY(-6px);box-shadow:0 16px 44px rgba(0,0,0,.08);border-color:rgba(152,131,88,.25)}
 .pgv-cascade-card:hover::before{opacity:1}
@@ -119,13 +119,13 @@
 .pgv-faq .pgv-section-header{text-align:center;max-width:680px;margin:0 auto 60px}
 .pgv-faq .pgv-section-header h2{color:var(--charcoal);margin-bottom:16px}
 .pgv-faq-list{max-width:800px;margin:0 auto}
-.pgv-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.pgv-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .pgv-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .pgv-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}
 .pgv-faq-question:hover{color:var(--burgundy)}
-.pgv-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
+.pgv-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pgv-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
-.pgv-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
+.pgv-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pgv-faq-item.active .pgv-faq-toggle{background:var(--burgundy);transform:rotate(45deg)}
 .pgv-faq-item.active .pgv-faq-toggle::before,.pgv-faq-item.active .pgv-faq-toggle::after{background:var(--white)}
 .pgv-faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}

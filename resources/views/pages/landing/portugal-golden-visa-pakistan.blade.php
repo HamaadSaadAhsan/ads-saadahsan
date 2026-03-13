@@ -47,7 +47,7 @@
 .pgp-step{display:flex;align-items:flex-start;gap:40px;margin-bottom:40px;position:relative}
 .pgp-step:last-child{margin-bottom:0}
 .pgp-step:nth-child(even){flex-direction:row-reverse}
-.pgp-step-content{flex:1;background:var(--cream);border-radius:20px;padding:32px 28px;border:1px solid rgba(152,131,88,.1);transition:all .4s ease;position:relative}
+.pgp-step-content{flex:1;background:var(--cream);border-radius:20px;padding:32px 28px;border:1px solid rgba(152,131,88,.1);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;position:relative}
 .pgp-step-content::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));opacity:0;transition:opacity .3s ease;border-radius:0 0 20px 20px}
 .pgp-step-content:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.07)}
 .pgp-step-content:hover::after{opacity:1}
@@ -67,7 +67,7 @@
 .pgp-invest .pgp-section-header h2{color:var(--charcoal);margin-bottom:16px}
 .pgp-invest .pgp-section-header p{font-size:1rem;line-height:1.85;color:var(--text-muted)}
 .pgp-invest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:860px;margin:0 auto}
-.pgp-invest-card{background:var(--cream);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:all .4s ease;position:relative;overflow:hidden;display:flex;align-items:flex-start;gap:20px}
+.pgp-invest-card{background:var(--cream);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;position:relative;overflow:hidden;display:flex;align-items:flex-start;gap:20px}
 .pgp-invest-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--burgundy),var(--gold));opacity:0;transition:opacity .3s ease}
 .pgp-invest-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}
 .pgp-invest-card:hover::before{opacity:1}
@@ -80,7 +80,7 @@
 .pgp-consider-wrap h2{color:var(--charcoal);text-align:center;margin-bottom:16px}
 .pgp-consider-intro{text-align:center;font-size:1rem;line-height:1.85;color:var(--text-muted);margin-bottom:40px}
 .pgp-checklist{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px}
-.pgp-check-item{background:var(--white);border-radius:16px;padding:24px;border:1px solid rgba(152,131,88,.12);display:flex;align-items:flex-start;gap:16px;transition:all .3s ease}
+.pgp-check-item{background:var(--white);border-radius:16px;padding:24px;border:1px solid rgba(152,131,88,.12);display:flex;align-items:flex-start;gap:16px;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pgp-check-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06);transform:translateY(-2px)}
 .pgp-check-icon{flex-shrink:0;width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy),#5a0016);border-radius:50%}
 .pgp-check-icon svg{width:16px;height:16px;color:var(--white)}
@@ -90,13 +90,13 @@
 .pgp-faq .pgp-section-header{text-align:center;max-width:680px;margin:0 auto 60px}
 .pgp-faq .pgp-section-header h2{color:var(--charcoal);margin-bottom:16px}
 .pgp-faq-list{max-width:800px;margin:0 auto}
-.pgp-faq-item{background:var(--cream);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.pgp-faq-item{background:var(--cream);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .pgp-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .pgp-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}
 .pgp-faq-question:hover{color:var(--burgundy)}
-.pgp-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--white);border-radius:50%;transition:all .3s ease}
+.pgp-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--white);border-radius:50%;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pgp-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
-.pgp-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
+.pgp-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pgp-faq-item.active .pgp-faq-toggle{background:var(--burgundy);transform:rotate(45deg)}
 .pgp-faq-item.active .pgp-faq-toggle::before,.pgp-faq-item.active .pgp-faq-toggle::after{background:var(--white)}
 .pgp-faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}

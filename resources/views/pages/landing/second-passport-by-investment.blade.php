@@ -136,7 +136,7 @@
             background: rgba(201, 169, 98, .06);
             border: 1px solid rgba(201, 169, 98, .12);
             border-radius: 16px;
-            transition: all .3s ease
+            transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease
         }
 
         .spi-highlight:hover {
@@ -199,7 +199,7 @@
             border-radius: 20px;
             padding: 36px 28px;
             border: 1px solid rgba(152, 131, 88, .1);
-            transition: all .4s ease;
+            transition: color .4s ease, background .4s ease, border-color .4s ease, transform .4s ease, box-shadow .4s ease, opacity .4s ease;
             position: relative;
             overflow: hidden
         }
@@ -479,7 +479,7 @@
             margin-bottom: 16px;
             overflow: hidden;
             border: 1px solid rgba(152, 131, 88, .12);
-            transition: all .3s ease;
+            transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, .03)
         }
 
@@ -512,7 +512,7 @@
             position: relative;
             background: var(--cream);
             border-radius: 50%;
-            transition: all .3s ease
+            transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease
         }
 
         .spi-faq-toggle::before {
@@ -535,7 +535,7 @@
             height: 14px;
             background: var(--burgundy);
             transform: translate(-50%, -50%);
-            transition: all .3s ease
+            transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease
         }
 
         .spi-faq-item.active .spi-faq-toggle {

@@ -130,7 +130,7 @@
     background: rgba(201,169,98,.06);
     border: 1px solid rgba(201,169,98,.12);
     border-radius: 16px;
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .snl-highlight:hover {
     background: rgba(201,169,98,.12);
@@ -205,7 +205,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--burgundy);
-    transition: all .4s ease;
+    transition: color .4s ease, background .4s ease, border-color .4s ease, transform .4s ease, box-shadow .4s ease, opacity .4s ease;
 }
 .snl-step-card:hover .snl-step-number {
     background: var(--burgundy);
@@ -414,7 +414,7 @@
     margin-bottom: 16px;
     overflow: hidden;
     border: 1px solid rgba(152,131,88,.12);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,.03);
 }
 .snl-faq-item:hover {
@@ -441,7 +441,7 @@
     position: relative;
     background: var(--cream);
     border-radius: 50%;
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .snl-faq-toggle::before {
     content: '';
@@ -458,7 +458,7 @@
     width: 2px; height: 14px;
     background: var(--burgundy);
     transform: translate(-50%, -50%);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .snl-faq-item.active .snl-faq-toggle {
     background: var(--burgundy);

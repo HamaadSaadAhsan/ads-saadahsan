@@ -32,7 +32,7 @@
 .pri-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.3rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:22px;opacity:.9}
 .pri-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.78);max-width:540px;margin-bottom:0}
 .pri-hero-markers{display:flex;gap:28px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.12)}
-.pri-marker{display:flex;align-items:center;gap:12px;padding:14px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(201,169,98,.1);border-radius:0 0 16px 16px;flex:1;transition:all .3s ease}
+.pri-marker{display:flex;align-items:center;gap:12px;padding:14px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(201,169,98,.1);border-radius:0 0 16px 16px;flex:1;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pri-marker:hover{background:rgba(201,169,98,.08);border-color:rgba(201,169,98,.25)}
 .pri-marker-icon{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:0 0 12px 12px;flex-shrink:0}
 .pri-marker-icon svg{width:20px;height:20px;color:var(--charcoal)}
@@ -48,7 +48,7 @@
 .pri-process .section-header{text-align:center;max-width:680px;margin:0 auto 60px}
 .pri-process .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .pri-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
-.pri-step{background:var(--white);border-radius:0 0 24px 24px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);border-top:3px solid transparent;position:relative;transition:all .4s ease;overflow:hidden}
+.pri-step{background:var(--white);border-radius:0 0 24px 24px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);border-top:3px solid transparent;position:relative;transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;overflow:hidden}
 .pri-step::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));transition:opacity .3s ease}
 .pri-step:hover{transform:translateY(-4px);box-shadow:0 20px 48px rgba(0,0,0,.07)}
 .pri-step-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:linear-gradient(180deg,var(--burgundy),#5a0016);border-radius:0 0 12px 12px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:18px}
@@ -60,7 +60,7 @@
 .pri-invest-content h2{color:var(--charcoal);margin-bottom:20px}
 .pri-invest-content p{font-size:1rem;line-height:1.85;color:var(--text-muted);margin-bottom:16px}
 .pri-invest-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.pri-inv-card{background:var(--cream);border-radius:0 0 20px 20px;padding:28px 22px;border:1px solid rgba(152,131,88,.1);border-top:3px solid var(--gold);transition:all .4s ease;text-align:center}
+.pri-inv-card{background:var(--cream);border-radius:0 0 20px 20px;padding:28px 22px;border:1px solid rgba(152,131,88,.1);border-top:3px solid var(--gold);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;text-align:center}
 .pri-inv-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.06)}
 .pri-inv-card-icon{width:48px;height:48px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:0 0 14px 14px}
 .pri-inv-card-icon svg{width:24px;height:24px;color:var(--charcoal)}
@@ -99,13 +99,13 @@
 .pri-faq .section-header{text-align:center;max-width:680px;margin:0 auto 60px}
 .pri-faq .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .pri-faq-list{max-width:800px;margin:0 auto}
-.pri-faq-item{background:var(--white);border-radius:0 0 16px 16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.pri-faq-item{background:var(--white);border-radius:0 0 16px 16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .pri-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .pri-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}
 .pri-faq-question:hover{color:var(--burgundy)}
-.pri-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:0 0 10px 10px;transition:all .3s ease}
+.pri-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:0 0 10px 10px;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pri-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
-.pri-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
+.pri-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .pri-faq-item.active .pri-faq-toggle{background:var(--burgundy);transform:rotate(45deg);border-radius:50%}
 .pri-faq-item.active .pri-faq-toggle::before,.pri-faq-item.active .pri-faq-toggle::after{background:var(--white)}
 .pri-faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}

@@ -31,7 +31,7 @@
 .rbi-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .rbi-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .rbi-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
-.rbi-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:all .3s ease}
+.rbi-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .rbi-highlight:hover{background:rgba(201,169,98,.12);border-color:rgba(201,169,98,.25);transform:translateY(-3px)}
 .rbi-highlight-icon{width:44px;height:44px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:12px}
 .rbi-highlight-icon svg{width:22px;height:22px;color:var(--charcoal)}
@@ -44,7 +44,7 @@
 .rbi-what-visual::before{content:'';position:absolute;top:0;left:32px;right:32px;height:4px;background:linear-gradient(90deg,var(--gold),var(--burgundy));border-radius:0 0 4px 4px}
 .rbi-what-visual h3{color:var(--charcoal);margin-bottom:24px;font-size:1.4rem}
 .rbi-globe-dots{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-bottom:24px;padding:20px;background:var(--white);border-radius:16px;border:1px solid rgba(152,131,88,.08)}
-.rbi-globe-dot{width:100%;aspect-ratio:1;border-radius:50%;background:rgba(201,169,98,.15);transition:all .4s ease}
+.rbi-globe-dot{width:100%;aspect-ratio:1;border-radius:50%;background:rgba(201,169,98,.15);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease}
 .rbi-globe-dot.active{background:linear-gradient(135deg,var(--gold),var(--gold-dark));box-shadow:0 0 8px rgba(201,169,98,.3)}
 .rbi-globe-dot.accent{background:linear-gradient(135deg,var(--burgundy),#600018);box-shadow:0 0 8px rgba(128,0,32,.2)}
 .rbi-globe-label{text-align:center;font-size:13px;color:var(--text-muted);font-weight:500;font-style:italic}
@@ -52,9 +52,9 @@
 .rbi-timeline{max-width:800px;margin:0 auto;position:relative}
 .rbi-timeline::before{content:'';position:absolute;left:28px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--burgundy))}
 .rbi-step{display:flex;gap:28px;align-items:flex-start;padding:24px 0;position:relative}
-.rbi-step-num{flex-shrink:0;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--white);border:2px solid var(--gold);border-radius:50%;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--burgundy);position:relative;z-index:1;transition:all .3s ease}
+.rbi-step-num{flex-shrink:0;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--white);border:2px solid var(--gold);border-radius:50%;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--burgundy);position:relative;z-index:1;transition:transform .3s ease}
 .rbi-step:hover .rbi-step-num{background:linear-gradient(135deg,var(--burgundy),#600018);color:var(--white);border-color:var(--burgundy)}
-.rbi-step-content{background:var(--white);border-radius:16px;padding:24px 28px;flex:1;border:1px solid rgba(152,131,88,.1);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.rbi-step-content{background:var(--white);border-radius:16px;padding:24px 28px;flex:1;border:1px solid rgba(152,131,88,.1);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .rbi-step:hover .rbi-step-content{box-shadow:0 12px 32px rgba(0,0,0,.08);border-color:rgba(152,131,88,.25)}
 .rbi-step-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:0}
 .rbi-compare{padding:100px 0;background:var(--white);position:relative;overflow:hidden}
@@ -75,7 +75,7 @@
 .rbi-features{padding:100px 0;background:var(--cream);position:relative}
 .rbi-features .section-header{text-align:center;max-width:680px;margin:0 auto 60px}.rbi-features .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .rbi-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto}
-.rbi-feature-card{background:var(--white);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:all .4s ease;position:relative;overflow:hidden;text-align:center}
+.rbi-feature-card{background:var(--white);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;position:relative;overflow:hidden;text-align:center}
 .rbi-feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--burgundy));opacity:0;transition:opacity .3s ease}
 .rbi-feature-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}.rbi-feature-card:hover::before{opacity:1}
 .rbi-feature-icon{width:52px;height:52px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--burgundy) 0%,#600018 100%);border-radius:14px}.rbi-feature-icon svg{width:24px;height:24px;color:var(--white)}
@@ -94,12 +94,12 @@
 .rbi-cta-card h3{color:var(--white);font-size:1.75rem;margin-bottom:16px;position:relative;z-index:1}.rbi-cta-card .btn{position:relative;z-index:1}
 .rbi-faq{padding:100px 0;background:var(--cream)}.rbi-faq .section-header{text-align:center;max-width:680px;margin:0 auto 60px}.rbi-faq .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .rbi-faq-list{max-width:800px;margin:0 auto}
-.rbi-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.rbi-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .rbi-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .rbi-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.rbi-faq-question:hover{color:var(--burgundy)}
-.rbi-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
+.rbi-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .rbi-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
-.rbi-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
+.rbi-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .rbi-faq-item.active .rbi-faq-toggle{background:var(--burgundy);transform:rotate(45deg)}
 .rbi-faq-item.active .rbi-faq-toggle::before,.rbi-faq-item.active .rbi-faq-toggle::after{background:var(--white)}
 .rbi-faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}

@@ -31,14 +31,14 @@
 .civ-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.35rem;font-weight:500;font-style:italic;color:var(--gold-light);margin-bottom:20px;opacity:.9}
 .civ-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}
 .civ-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}
-.civ-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:all .3s ease}
+.civ-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .civ-highlight:hover{background:rgba(201,169,98,.12);border-color:rgba(201,169,98,.25);transform:translateY(-3px)}
 .civ-highlight-icon{width:44px;height:44px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:12px}
 .civ-highlight-icon svg{width:22px;height:22px;color:var(--charcoal)}
 .civ-highlight-label{font-size:12px;font-weight:600;color:var(--white);letter-spacing:.5px;line-height:1.4}
 .civ-process{padding:100px 0;background:var(--white)}.civ-process .section-header{text-align:center;max-width:680px;margin:0 auto 60px}.civ-process .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .civ-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto}
-.civ-card{background:var(--cream);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:all .4s ease;position:relative;overflow:hidden}
+.civ-card{background:var(--cream);border-radius:20px;padding:36px 28px;border:1px solid rgba(152,131,88,.1);transition:color .4s ease,background .4s ease,border-color .4s ease,transform .4s ease,box-shadow .4s ease,opacity .4s ease;position:relative;overflow:hidden}
 .civ-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--burgundy),var(--gold));opacity:0;transition:opacity .3s ease}
 .civ-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08)}.civ-card:hover::after{opacity:1}
 .civ-card-num{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:linear-gradient(135deg,var(--burgundy),var(--burgundy-dark));border-radius:14px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:20px}
@@ -67,12 +67,12 @@
 .civ-cta-card h3{color:var(--white);font-size:1.75rem;margin-bottom:16px}.civ-cta-card .btn{position:relative;z-index:1}
 .civ-faq{padding:100px 0;background:var(--cream)}.civ-faq .section-header{text-align:center;max-width:680px;margin:0 auto 60px}.civ-faq .section-header h2{color:var(--charcoal);margin-bottom:16px}
 .civ-faq-list{max-width:800px;margin:0 auto}
-.civ-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.civ-faq-item{background:var(--white);border-radius:16px;margin-bottom:16px;overflow:hidden;border:1px solid rgba(152,131,88,.12);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .civ-faq-item:hover{border-color:rgba(152,131,88,.3);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .civ-faq-question{padding:24px 30px;font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.2rem;font-weight:600;color:var(--charcoal);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .3s ease}.civ-faq-question:hover{color:var(--burgundy)}
-.civ-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:all .3s ease}
+.civ-faq-toggle{width:36px;height:36px;flex-shrink:0;position:relative;background:var(--cream);border-radius:50%;transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .civ-faq-toggle::before{content:'';position:absolute;top:50%;left:50%;width:14px;height:2px;background:var(--burgundy);transform:translate(-50%,-50%)}
-.civ-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:all .3s ease}
+.civ-faq-toggle::after{content:'';position:absolute;top:50%;left:50%;width:2px;height:14px;background:var(--burgundy);transform:translate(-50%,-50%);transition:color .3s ease,background .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease,opacity .3s ease}
 .civ-faq-item.active .civ-faq-toggle{background:var(--burgundy);transform:rotate(45deg)}
 .civ-faq-item.active .civ-faq-toggle::before,.civ-faq-item.active .civ-faq-toggle::after{background:var(--white)}
 .civ-faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}

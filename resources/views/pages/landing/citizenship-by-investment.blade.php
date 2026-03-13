@@ -3,6 +3,10 @@
 @section('meta_title', 'Citizenship by Investment | Legal Second Citizenship Programs for Global Mobility')
 @section('meta_description', 'Explore government-approved Citizenship by Investment programs offering legal second citizenship, visa-free travel access, and family inclusion through regulated investment pathways.')
 
+@push('css')
+.cbi-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:#1a1a1f;overflow:hidden}.cbi-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 50%,rgba(128,0,32,.25) 0%,transparent 70%),radial-gradient(ellipse 60% 50% at 80% 30%,rgba(201,169,98,.1) 0%,transparent 60%)}.cbi-hero .container{position:relative;z-index:1}.cbi-hero-grid{display:grid;grid-template-columns:1fr 460px;gap:60px;align-items:center}.cbi-hero-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 20px;background:rgba(201,169,98,.1);border:1px solid rgba(201,169,98,.25);border-radius:50px;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#C9A962;margin-bottom:28px}.cbi-hero-badge::before{content:'';width:6px;height:6px;background:#C9A962;border-radius:50%}.cbi-hero h1{color:#fff;font-size:clamp(2.8rem,5.5vw,4.2rem);line-height:1.1;margin-bottom:16px}.cbi-hero h1 span{display:block;background:linear-gradient(135deg,#C9A962 0%,#E8D5A3 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.cbi-hero-subtitle{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.35rem;font-weight:500;font-style:italic;color:#E8D5A3;margin-bottom:20px;opacity:.9}.cbi-hero-lead{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:0}.cbi-hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:36px;border-top:1px solid rgba(201,169,98,.15)}.cbi-highlight{text-align:center;padding:20px 12px;background:rgba(201,169,98,.06);border:1px solid rgba(201,169,98,.12);border-radius:16px}@media(max-width:1024px){.cbi-hero-grid{grid-template-columns:1fr;gap:48px;text-align:center}.cbi-hero-lead{margin:0 auto}.cbi-hero-highlights{justify-content:center}}@media(max-width:768px){.cbi-hero{min-height:auto;padding:110px 0 60px}.cbi-hero-highlights{grid-template-columns:1fr;gap:12px}}
+@endpush
+
 @push('meta')
 <link rel="canonical" href="https://ads.saadahsan.com/citizenship-by-investment">
 <meta property="og:url" content="https://ads.saadahsan.com/citizenship-by-investment">
@@ -159,7 +163,7 @@
     background: rgba(201,169,98,.06);
     border: 1px solid rgba(201,169,98,.12);
     border-radius: 16px;
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .cbi-highlight:hover {
     background: rgba(201,169,98,.12);
@@ -243,7 +247,7 @@
     color: var(--burgundy);
     position: relative;
     z-index: 1;
-    transition: all .4s ease;
+    transition: transform .4s ease;
 }
 .cbi-step:hover .cbi-step-number {
     background: var(--burgundy);
@@ -392,7 +396,7 @@
     padding: 40px 32px;
     position: relative;
     overflow: hidden;
-    transition: all .4s ease;
+    transition: color .4s ease, background .4s ease, border-color .4s ease, transform .4s ease, box-shadow .4s ease, opacity .4s ease;
 }
 .cbi-program-card::before {
     content: '';
@@ -570,7 +574,7 @@
     margin-bottom: 16px;
     overflow: hidden;
     border: 1px solid rgba(152,131,88,.12);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,.03);
 }
 .cbi-faq-item:hover {
@@ -599,7 +603,7 @@
     position: relative;
     background: var(--cream);
     border-radius: 50%;
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .cbi-faq-toggle::before {
     content: '';
@@ -620,7 +624,7 @@
     height: 14px;
     background: var(--burgundy);
     transform: translate(-50%, -50%);
-    transition: all .3s ease;
+    transition: color .3s ease, background .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease, opacity .3s ease;
 }
 .cbi-faq-item.active .cbi-faq-toggle {
     background: var(--burgundy);

@@ -175,7 +175,7 @@ img {
 
 a {
     text-decoration: none;
-    transition: all .3s ease
+    transition: color .3s ease
 }
 
 .container {
@@ -217,7 +217,7 @@ a {
     z-index: 1000;
     padding: 16px 0;
     background: transparent;
-    transition: all .4s ease
+    transition: padding .4s ease, background .4s ease, backdrop-filter .4s ease, box-shadow .4s ease
 }
 
 .header.scrolled {
@@ -271,7 +271,7 @@ a {
     font-size: 14px;
     letter-spacing: .5px;
     text-transform: uppercase;
-    transition: all .4s cubic-bezier(.165, .84, .44, 1);
+    transition: transform .4s cubic-bezier(.165, .84, .44, 1), box-shadow .4s cubic-bezier(.165, .84, .44, 1);
     border: none;
     cursor: pointer;
     position: relative;
@@ -597,7 +597,7 @@ a {
     background: var(--cream);
     border-radius: 20px;
     text-align: center;
-    transition: all .4s ease;
+    transition: transform .4s ease, box-shadow .4s ease;
     position: relative;
     overflow: hidden
 }
@@ -671,7 +671,7 @@ a {
     font-size: 14px;
     color: var(--text-dark);
     background: var(--cream);
-    transition: all .3s ease
+    transition: border-color .3s ease, box-shadow .3s ease
 }
 
 .iti { display: block !important; width: 100%; position: relative }
@@ -852,7 +852,7 @@ a {
     margin-bottom: 16px;
     overflow: hidden;
     border: 1px solid rgba(201, 169, 98, .1);
-    transition: all .3s ease
+    transition: border-color .3s ease
 }
 
 .faq-item:hover { border-color: rgba(201, 169, 98, .3) }
@@ -867,7 +867,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all .3s ease
+    transition: color .3s ease
 }
 
 .faq-question:hover { color: var(--gold) }
@@ -879,7 +879,7 @@ a {
     position: relative;
     background: rgba(201, 169, 98, .1);
     border-radius: 50%;
-    transition: all .3s ease
+    transition: background .3s ease, transform .3s ease
 }
 
 .faq-toggle::before {
@@ -914,7 +914,7 @@ a {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: all .4s ease
+    transition: max-height .4s ease
 }
 
 .faq-answer-inner {
@@ -955,6 +955,7 @@ a {
     animation: float 3s ease-in-out infinite
 }
 
+.whatsapp-float { transition: none }
 .whatsapp-float svg { width: 28px; height: 28px }
 
 @media (max-width: 1024px) {
