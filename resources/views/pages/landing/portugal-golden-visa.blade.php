@@ -66,7 +66,7 @@
 .pgv-cascade-card:nth-child(2):hover{transform:translateY(14px)}
 .pgv-cascade-card:nth-child(4):hover{transform:translateY(14px)}
 .pgv-cascade-card:nth-child(6):hover{transform:translateY(14px)}
-.pgv-cascade-num{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:2.4rem;font-weight:700;color:var(--burgundy);opacity:.25;line-height:1;margin-bottom:14px}
+.pgv-cascade-num{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:2.4rem;font-weight:700;color:var(--burgundy);opacity:.45;line-height:1;margin-bottom:14px}
 .pgv-cascade-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--charcoal);margin-bottom:8px}
 .pgv-cascade-desc{font-size:13.5px;color:var(--text-muted);line-height:1.65;margin:0}
 .pgv-process-closing{text-align:center;margin-top:48px;font-size:15px;color:var(--text-muted);font-style:italic}

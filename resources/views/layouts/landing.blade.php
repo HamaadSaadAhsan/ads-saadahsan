@@ -446,6 +446,58 @@
             border: 1px solid #ef9a9a
         }
 
+        .trust-section {
+            padding: 40px 0;
+            background: #1a1a1f;
+            position: relative
+        }
+
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #C9A962, transparent)
+        }
+
+        .trust-grid {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #fff
+        }
+
+        .trust-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #C9A962 0%, #988358 100%);
+            border-radius: 12px
+        }
+
+        .trust-icon svg {
+            width: 24px;
+            height: 24px;
+            color: #1a1a1f
+        }
+
+        .trust-text {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .5px
+        }
+
         @media (max-width: 768px) {
             .form-row {
                 grid-template-columns:1fr
