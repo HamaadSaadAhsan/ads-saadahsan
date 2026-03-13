@@ -166,6 +166,13 @@
             background: linear-gradient(135deg, rgba(26, 26, 31, .92) 0%, rgba(26, 26, 31, .85) 50%, rgba(90, 0, 22, .8) 100%)
         }
 
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none
+        }
+
         .hero .container {
             position: relative;
             z-index: 1
@@ -444,6 +451,10 @@
             background: #fce4ec;
             color: #c62828;
             border: 1px solid #ef9a9a
+        }
+
+        [x-cloak] {
+            display: none !important
         }
 
         .hp-field {
