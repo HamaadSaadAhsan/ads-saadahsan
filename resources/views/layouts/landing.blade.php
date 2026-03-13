@@ -446,6 +446,17 @@
             border: 1px solid #ef9a9a
         }
 
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            z-index: -1;
+            pointer-events: none
+        }
+
         .trust-section {
             padding: 40px 0;
             background: #1a1a1f;
