@@ -33,6 +33,8 @@
 
 <main>@yield('content')</main>
 
+<x-google-reviews />
+
 <footer class="footer">
     <div class="container footer-inner">
         <p class="footer-text">&copy; {{ date('Y') }} Saad Ahsan Residency & Citizenship. All rights reserved.</p>
