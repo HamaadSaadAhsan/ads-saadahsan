@@ -25,6 +25,7 @@ class GooglePlacesService
             $response = Http::withHeaders([
                 'X-Goog-Api-Key' => $this->apiKey,
                 'X-Goog-FieldMask' => 'id,rating,userRatingCount,reviews',
+                'Referer' => 'https://ads.saadahsan.com/',
             ])->get("{$this->baseUrl}/{$this->placeId}");
 
             if (! $response->successful()) {
