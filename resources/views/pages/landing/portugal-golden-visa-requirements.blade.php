@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"Are Portugal Golden Visa requirements defined by law?","acceptedAnswer":{"@@type":"Answer","text":"Yes. The eligibility criteria are established under Portuguese immigration legislation."}},{"@@type":"Question","name":"Does meeting the requirements guarantee approval?","acceptedAnswer":{"@@type":"Answer","text":"No. All applications are subject to government review and formal approval."}},{"@@type":"Question","name":"Are there minimum stay obligations?","acceptedAnswer":{"@@type":"Answer","text":"Yes. Applicants must comply with residency conditions defined under the program."}},{"@@type":"Question","name":"Do requirements apply to family members?","acceptedAnswer":{"@@type":"Answer","text":"Yes. Family members included in the application must meet applicable documentation and legal standards."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .pgr-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
 .pgr-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 25% 50%,rgba(128,0,32,.15) 0%,transparent 60%),radial-gradient(ellipse 45% 40% at 75% 30%,rgba(201,169,98,.08) 0%,transparent 50%)}
@@ -127,6 +127,10 @@
                 title="Check Eligibility Under Current Portugal Golden Visa Rules"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <section class="pgr-intro"><div class="container"><div class="pgr-intro-grid">
 <div class="pgr-intro-content">

@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"Are residency by investment programs legal?","acceptedAnswer":{"@@type":"Answer","text":"Yes. These programs operate under national immigration legislation and are regulated by government authorities."}},{"@@type":"Question","name":"Do residency programs grant citizenship?","acceptedAnswer":{"@@type":"Answer","text":"No. Residency status does not automatically provide citizenship unless separate naturalization requirements are met."}},{"@@type":"Question","name":"How long is residency valid?","acceptedAnswer":{"@@type":"Answer","text":"Validity depends on the specific country and program, and may require periodic renewal."}},{"@@type":"Question","name":"Can family members be included?","acceptedAnswer":{"@@type":"Answer","text":"Many residency programs allow inclusion of immediate family members under one structured application."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .rip-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
 .rip-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 25% 60%,rgba(128,0,32,.16) 0%,transparent 65%),radial-gradient(ellipse 45% 40% at 75% 30%,rgba(201,169,98,.1) 0%,transparent 55%)}
@@ -125,6 +125,10 @@
                 title="Check Eligibility for Legal Residency Options"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <section class="rip-intro"><div class="container"><div class="rip-intro-inner">
 <h2>What Are Residency by Investment Programs?</h2>

@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== SAINT LUCIA PAGE — ISLAND SERENITY ===== */
 
@@ -570,6 +570,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Horizontal Scroll Cards ===== -->
 <section class="snl-process">

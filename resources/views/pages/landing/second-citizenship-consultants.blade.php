@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"What are second citizenship consultants?","acceptedAnswer":{"@@type":"Answer","text":"They are professional advisors who assist individuals in applying for legal dual nationality programs established by governments."}},{"@@type":"Question","name":"Can consultants guarantee second citizenship?","acceptedAnswer":{"@@type":"Answer","text":"No. Citizenship is granted solely by the issuing government after due diligence and approval."}},{"@@type":"Question","name":"Do second citizenship consultants handle documentation?","acceptedAnswer":{"@@type":"Answer","text":"They typically guide applicants in preparing and organizing required documents in accordance with official requirements."}},{"@@type":"Question","name":"Is it necessary to use a consultant?","acceptedAnswer":{"@@type":"Answer","text":"While not mandatory, professional guidance can help applicants navigate complex regulatory procedures more efficiently."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .scc-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
 .scc-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 20% 55%,rgba(128,0,32,.18) 0%,transparent 65%),radial-gradient(ellipse 50% 45% at 80% 25%,rgba(201,169,98,.1) 0%,transparent 55%)}
@@ -110,6 +110,10 @@
                 title="Schedule a Consultation With a Second Citizenship Advisor"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Schedule a Consultation</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <!-- What Consultants Do -->
 <section class="scc-services"><div class="container">

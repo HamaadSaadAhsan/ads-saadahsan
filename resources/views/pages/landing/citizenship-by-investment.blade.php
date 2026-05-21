@@ -32,7 +32,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== CBI PAGE — UNIQUE DESIGN SYSTEM ===== */
 
@@ -764,6 +764,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 
 <!-- ===== HOW IT WORKS — Timeline ===== -->

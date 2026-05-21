@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== CITIZENSHIP THROUGH INVESTMENT — GLOBAL PATHWAY ===== */
 
@@ -588,6 +588,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Pillar Cards ===== -->
 <section class="cti-process">

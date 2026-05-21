@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== DOMINICA PAGE — NATURE ISLE DESIGN ===== */
 
@@ -554,6 +554,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Zigzag ===== -->
 <section class="dom-process">

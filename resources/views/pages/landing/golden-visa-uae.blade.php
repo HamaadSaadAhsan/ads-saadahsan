@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"WebPage","name":"Golden Visa UAE | Legal Long-Term Residency Program in the United Arab Emirates","description":"Understand the UAE Golden Visa, a government-approved long-term residency program that provides lawful residence in Dubai and across the UAE for eligible individuals.","publisher":{"@@type":"Organization","name":"Saad Ahsan Residency & Citizenship"}}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <section class="hero" style="background-image:url('{{ asset('images/800/uae-golden-visa-800.webp') }}')">
     <div class="container">
         <div class="hero-grid">
@@ -62,6 +62,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <section class="trust-section">
     <div class="container">

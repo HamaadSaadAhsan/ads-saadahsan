@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"WebPage","name":"Golden Visa UAE Price | Cost Overview for Long-Term Residency","description":"Understand the UAE Golden Visa price structure, including cost considerations and factors that influence the total investment for long-term residency.","publisher":{"@@type":"Organization","name":"Saad Ahsan Residency & Citizenship"}}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <section class="hero" style="background-image:url('{{ asset('images/800/uae-golden-visa-800.webp') }}')">
     <div class="container">
         <div class="hero-grid">
@@ -57,6 +57,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <section class="trust-section">
     <div class="container">

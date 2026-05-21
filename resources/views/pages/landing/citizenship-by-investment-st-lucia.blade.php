@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== CSL PAGE — CARIBBEAN HORIZON DESIGN SYSTEM ===== */
 
@@ -705,6 +705,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Stepped Staircase ===== -->
 <section class="csl-process">

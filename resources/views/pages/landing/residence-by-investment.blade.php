@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"Is residence by investment legal?","acceptedAnswer":{"@@type":"Answer","text":"Yes. These programs operate under national immigration legislation and are regulated by government authorities."}},{"@@type":"Question","name":"Does residence by investment grant citizenship?","acceptedAnswer":{"@@type":"Answer","text":"No. Residence status does not automatically provide citizenship unless separate legal criteria are met."}},{"@@type":"Question","name":"How long is residence valid?","acceptedAnswer":{"@@type":"Answer","text":"Validity depends on the specific program and country, and may require periodic renewal."}},{"@@type":"Question","name":"Can family members be included?","acceptedAnswer":{"@@type":"Answer","text":"Many programs allow inclusion of immediate family members under one structured application."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .rbi-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
 .rbi-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 75% 40%,rgba(201,169,98,.12) 0%,transparent 60%),radial-gradient(ellipse 60% 55% at 15% 60%,rgba(128,0,32,.15) 0%,transparent 55%)}
@@ -130,6 +130,10 @@
                 title="Check Eligibility for Legal Residence Pathways"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <section class="rbi-what"><div class="container"><div class="rbi-what-grid">
 <div class="rbi-what-content">

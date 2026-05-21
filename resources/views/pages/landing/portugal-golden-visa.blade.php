@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== PGV PAGE — IBERIAN GATEWAY DESIGN ===== */
 .pgv-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
@@ -208,6 +208,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== WHAT IS THE PORTUGAL GOLDEN VISA ===== -->
 <section class="pgv-about">

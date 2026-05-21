@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== INVESTMENT CITIZENSHIP — CAPITAL BRIDGE ===== */
 .icz-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
@@ -157,6 +157,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS ===== -->
 <section class="icz-process">

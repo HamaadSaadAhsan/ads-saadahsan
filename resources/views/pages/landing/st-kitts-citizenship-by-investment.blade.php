@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== ST KITTS PAGE — HERITAGE PIONEER DESIGN ===== */
 
@@ -542,6 +542,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Grid Cards ===== -->
 <section class="stk-process">

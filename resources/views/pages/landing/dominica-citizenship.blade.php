@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== DOMINICA CITIZENSHIP — EMERALD REPUBLIC DESIGN ===== */
 
@@ -623,6 +623,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Layered Card Stack ===== -->
 <section class="dmc-process">

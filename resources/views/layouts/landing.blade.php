@@ -31,9 +31,11 @@
     </div>
 </header>
 
-<main>@yield('content')</main>
-
+<main>
+@yield('hero')
 <x-google-reviews />
+@yield('content')
+</main>
 
 <footer class="footer">
     <div class="container footer-inner">

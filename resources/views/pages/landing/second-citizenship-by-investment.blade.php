@@ -23,7 +23,7 @@
     </script>
 @endpush
 
-@section('content')
+@section('hero')
     <style>
         .sci-hero {
             min-height: 100vh;
@@ -117,6 +117,7 @@
             line-height: 1.85;
             color: rgba(255, 255, 255, .8);
             max-width: 540px;
+            margin-top: 0;
             margin-bottom: 0
         }
 
@@ -678,7 +679,7 @@
                         through a qualifying economic contribution. These programs operate under national legislation
                         and grant citizenship only after due diligence, compliance screening, and official government
                         approval.</p>
-                    <p class="sci-hero-lead" style="margin-top:-8px">Citizenship is conferred strictly in accordance
+                    <p class="sci-hero-lead">Citizenship is conferred strictly in accordance
                         with the laws of the issuing country.</p>
                     <div class="sci-hero-highlights">
                         <div class="sci-highlight">
@@ -717,6 +718,10 @@
             </div>
         </div>
     </section>
+
+@endsection
+
+@section('content')
 
     <section class="sci-process">
         <div class="container">

@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"Is the Portugal Golden Visa available to Pakistani nationals?","acceptedAnswer":{"@@type":"Answer","text":"Yes. Pakistani applicants may apply if they meet eligibility requirements under Portuguese law."}},{"@@type":"Question","name":"Does the Golden Visa grant citizenship?","acceptedAnswer":{"@@type":"Answer","text":"No. It grants residency. Citizenship may require separate naturalization requirements under Portuguese law."}},{"@@type":"Question","name":"Is government approval required?","acceptedAnswer":{"@@type":"Answer","text":"Yes. All applications undergo formal review and approval by Portuguese authorities."}},{"@@type":"Question","name":"Can family members be included?","acceptedAnswer":{"@@type":"Answer","text":"Yes. Eligible applicants may include immediate family members under one structured application."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .pgp-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
 .pgp-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 25% 60%,rgba(128,0,32,.16) 0%,transparent 65%),radial-gradient(ellipse 45% 40% at 75% 30%,rgba(201,169,98,.1) 0%,transparent 55%)}
@@ -136,6 +136,10 @@
                 title="Check Eligibility for Portugal Residency by Investment"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <section class="pgp-eligible"><div class="container"><div class="pgp-eligible-grid">
 <div class="pgp-eligible-content">

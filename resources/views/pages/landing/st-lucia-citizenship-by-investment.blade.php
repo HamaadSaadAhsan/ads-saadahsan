@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== ST LUCIA PAGE — TROPICAL ELEGANCE ===== */
 
@@ -575,6 +575,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Vertical Timeline ===== -->
 <section class="stl-process">

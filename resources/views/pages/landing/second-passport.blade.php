@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== SECOND PASSPORT — DUAL IDENTITY ===== */
 
@@ -495,6 +495,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS ===== -->
 <section class="spp-process">

@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== TURKEY PAGE — EURASIAN CROSSROADS DESIGN ===== */
 
@@ -527,6 +527,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Mosaic Grid ===== -->
 <section class="trk-process">

@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"Is citizenship invest legal?","acceptedAnswer":{"@@type":"Answer","text":"Yes. When completed through government-approved programs, it is a lawful pathway to second citizenship."}},{"@@type":"Question","name":"How long does citizenship investment take?","acceptedAnswer":{"@@type":"Answer","text":"Processing timelines vary depending on the country and regulatory review procedures."}},{"@@type":"Question","name":"Does investing guarantee citizenship?","acceptedAnswer":{"@@type":"Answer","text":"No. All applications are subject to due diligence and official government approval."}},{"@@type":"Question","name":"Can families apply together?","acceptedAnswer":{"@@type":"Answer","text":"Most programs allow inclusion of immediate family members under one structured application."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .civ-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:var(--charcoal);overflow:hidden}
 .civ-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 20% 55%,rgba(128,0,32,.18) 0%,transparent 65%),radial-gradient(ellipse 50% 45% at 80% 25%,rgba(201,169,98,.1) 0%,transparent 55%)}
@@ -102,6 +102,10 @@
                 title="Check Eligibility to Invest for Citizenship"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <section class="civ-process"><div class="container">
 <div class="section-header"><h2>How to Invest for Citizenship</h2><p>Each country defines its own investment thresholds and regulatory standards.</p></div>

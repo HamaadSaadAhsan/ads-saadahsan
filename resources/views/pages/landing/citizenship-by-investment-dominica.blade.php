@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== DOMINICA CBI — VERDANT PATH DESIGN ===== */
 
@@ -681,6 +681,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Vertical Accordion ===== -->
 <section class="cbd-process">

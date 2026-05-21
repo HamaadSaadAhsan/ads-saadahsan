@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"WebPage","name":"How to Apply for UAE Golden Visa | Step-by-Step Golden Visa Process","description":"Learn how to apply for the UAE Golden Visa. Understand the official Golden Visa application process, steps involved, and how residency approval works in the UAE.","publisher":{"@@type":"Organization","name":"Saad Ahsan Residency & Citizenship"}}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <section class="hero" style="background-image:url('{{ asset('images/800/uae-golden-visa-800.webp') }}')">
     <div class="container">
         <div class="hero-grid">
@@ -61,6 +61,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <section class="trust-section">
     <div class="container">

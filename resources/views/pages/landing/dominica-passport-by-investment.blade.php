@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== DOMINICA PASSPORT — GATEWAY SEAL ===== */
 
@@ -555,6 +555,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Passport Stages ===== -->
 <section class="dpi-process">

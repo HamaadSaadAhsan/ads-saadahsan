@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"FAQPage","mainEntity":[{"@@type":"Question","name":"Is Portugal residency by investment legal?","acceptedAnswer":{"@@type":"Answer","text":"Yes. It operates under Portuguese immigration legislation and is regulated by government authorities."}},{"@@type":"Question","name":"Does residency grant citizenship automatically?","acceptedAnswer":{"@@type":"Answer","text":"No. Residency does not automatically provide citizenship unless separate naturalization requirements are met."}},{"@@type":"Question","name":"Can family members be included?","acceptedAnswer":{"@@type":"Answer","text":"Yes. Eligible applicants may include immediate family members under one structured application."}},{"@@type":"Question","name":"Is government approval required?","acceptedAnswer":{"@@type":"Answer","text":"Yes. All applications are subject to formal review and approval."}}]}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 .pri-hero{min-height:100vh;padding:140px 0 100px;position:relative;display:flex;align-items:center;background:linear-gradient(165deg,#1a1a1f 0%,#2a1f24 40%,#1a1a1f 100%);overflow:hidden}
 .pri-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 80%,rgba(201,169,98,.08) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 15% 30%,rgba(128,0,32,.14) 0%,transparent 55%)}
@@ -137,6 +137,10 @@
                 title="Check Eligibility for Portugal Residency Programs"
                 subtitle="Share your details and our experts will assess your eligibility."
             >Check Eligibility</x-landing-form></div></div></section>
+
+@endsection
+
+@section('content')
 
 <section class="pri-about"><div class="container">
 <div class="pri-about-wrap">

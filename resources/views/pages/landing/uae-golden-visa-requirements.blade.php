@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@@context":"https://schema.org","@@type":"WebPage","name":"UAE Golden Visa Requirements | Eligibility Criteria for Long-Term Residency","description":"Review the official UAE Golden Visa requirements, including eligibility criteria and regulatory conditions for long-term residency in Dubai and across the UAE.","publisher":{"@@type":"Organization","name":"Saad Ahsan Residency & Citizenship"}}</script>
 @endpush
 
-@section('content')
+@section('hero')
 <section class="hero" style="background-image:url('{{ asset('images/800/uae-golden-visa-800.webp') }}')">
     <div class="container">
         <div class="hero-grid">
@@ -61,6 +61,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <section class="trust-section">
     <div class="container">

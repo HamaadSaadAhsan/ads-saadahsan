@@ -23,7 +23,7 @@
     </script>
 @endpush
 
-@section('content')
+@section('hero')
     <style>
         /* ===== SECOND PASSPORT BY INVESTMENT — TRAVEL HORIZON ===== */
         .spi-hero {
@@ -717,6 +717,10 @@
             </div>
         </div>
     </section>
+
+@endsection
+
+@section('content')
 
     <section class="spi-process">
         <div class="container">

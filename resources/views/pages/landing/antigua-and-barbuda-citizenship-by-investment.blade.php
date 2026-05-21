@@ -28,7 +28,7 @@
 </script>
 @endpush
 
-@section('content')
+@section('hero')
 <style>
 /* ===== ANTIGUA PAGE — PARADISE SHORES DESIGN ===== */
 
@@ -431,6 +431,10 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('content')
 
 <!-- ===== PROCESS — Itinerary Cards ===== -->
 <section class="atg-process">
