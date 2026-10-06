@@ -153,7 +153,6 @@
     ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click'].forEach(function (e) {
         document.addEventListener(e, loadGTM, {once: true, passive: true})
     });
-    setTimeout(loadGTM, 5000);
 </script>
 </body>
 </html>

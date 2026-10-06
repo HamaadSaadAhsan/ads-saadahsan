@@ -51,4 +51,12 @@ class LandingPageResponseTest extends TestCase
         $response->assertDontSee(' src="https://www.google.com/maps/embed', false);
         $response->assertSee('class="gr-stars-overall" role="img"', false);
     }
+
+    public function test_google_tag_manager_loads_only_after_user_interaction(): void
+    {
+        $response = $this->get('/argentina-citizenship-requirements');
+
+        $response->assertSee('document.addEventListener(e, loadGTM, {once: true, passive: true})', false);
+        $response->assertDontSee('setTimeout(loadGTM', false);
+    }
 }
