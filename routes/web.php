@@ -37,3 +37,12 @@ Route::view('/portugal-golden-visa', 'pages.landing.portugal-golden-visa');
 Route::view('/portugal-golden-visa-requirements', 'pages.landing.portugal-golden-visa-requirements');
 Route::view('/portugal-golden-visa-pakistan', 'pages.landing.portugal-golden-visa-pakistan');
 Route::view('/portugal-residency-by-investment', 'pages.landing.portugal-residency-by-investment');
+// Argentina pages
+Route::view('/argentina-passport', 'pages.landing.argentina-passport');
+Route::view('/argentina-nationality', 'pages.landing.argentina-nationality');
+Route::view('/argentina-citizenship-by-investment', 'pages.landing.argentina-citizenship-by-investment');
+Route::view('/argentina-citizenship', 'pages.landing.argentina-citizenship');
+Route::view('/argentine-passport', 'pages.landing.argentine-passport');
+Route::view('/argentinian-passport', 'pages.landing.argentinian-passport');
+Route::view('/argentina-immigration', 'pages.landing.argentina-immigration');
+Route::view('/argentina-citizenship-requirements', 'pages.landing.argentina-citizenship-requirements');
