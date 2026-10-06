@@ -23,7 +23,7 @@
 
             <div class="gr-overall">
                 <span class="gr-score">{{ number_format($rating, 1) }}</span>
-                <div class="gr-stars-overall" aria-label="{{ number_format($rating, 1) }} out of 5 stars">
+                <div class="gr-stars-overall" role="img" aria-label="{{ number_format($rating, 1) }} out of 5 stars">
                     @for($i = 1; $i <= 5; $i++)
                         @php $fill = min(max($rating - ($i - 1), 0), 1); $pct = round($fill * 100); @endphp
                         <svg viewBox="0 0 24 24" class="gr-star" aria-hidden="true">
@@ -43,7 +43,8 @@
 
         <div class="gr-embed-wrapper">
             <iframe
-                src="{{ $embedUrl }}"
+                id="gr-embed"
+                data-src="{{ $embedUrl }}"
                 width="100%"
                 height="480"
                 style="border:0"
@@ -53,6 +54,18 @@
                 title="Our Google Reviews"
             ></iframe>
         </div>
+        <script>
+            (function () {
+                var frame = document.getElementById('gr-embed');
+                if (!frame) return;
+                var load = function () { if (!frame.src) frame.src = frame.dataset.src; };
+                if (!('IntersectionObserver' in window)) { load(); return; }
+                var observer = new IntersectionObserver(function (entries) {
+                    if (entries[0].isIntersecting) { load(); observer.disconnect(); }
+                }, {rootMargin: '300px 0px'});
+                observer.observe(frame);
+            })();
+        </script>
 
         <div class="gr-footer">
             <a href="{{ $mapsUrl }}" target="_blank" rel="noopener noreferrer" class="gr-view-all">

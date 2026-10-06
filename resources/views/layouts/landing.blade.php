@@ -12,10 +12,13 @@
     <link rel="preload" href="{{ asset('fonts/cormorant-garamond-latin.woff2') }}" as="font" type="font/woff2"
           crossorigin>
     <link rel="preload" href="{{ asset('fonts/dm-sans-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ Vite::asset('resources/css/landing.css') }}" as="style">
     @stack('preload')
     <style>@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:optional;src:url('{{ asset('fonts/cormorant-garamond-latin.woff2') }}') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:optional;src:url('{{ asset('fonts/cormorant-garamond-latin.woff2') }}') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:optional;src:url('{{ asset('fonts/cormorant-garamond-latin.woff2') }}') format('woff2')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:optional;src:url('{{ asset('fonts/dm-sans-latin.woff2') }}') format('woff2')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:optional;src:url('{{ asset('fonts/dm-sans-latin.woff2') }}') format('woff2')}@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:optional;src:url('{{ asset('fonts/dm-sans-latin.woff2') }}') format('woff2')}@font-face{font-family:'Cormorant Garamond Fallback';src:local('Georgia'),local('Times New Roman');size-adjust:112%;ascent-override:95%;descent-override:22%;line-gap-override:0%}@font-face{font-family:'DM Sans Fallback';src:local('Arial'),local('Helvetica');size-adjust:105%;ascent-override:93%;descent-override:25%;line-gap-override:0%}[x-cloak]{display:none!important}.hp-field{position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;width:0;z-index:-1;pointer-events:none}@stack('css')</style>
-    <link rel="stylesheet" href="{{ Vite::asset('resources/css/landing.css') }}">
+    @if (Vite::isRunningHot())
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/landing.css') }}">
+    @else
+        <style>{!! Vite::content('resources/css/landing.css') !!}</style>
+    @endif
     @stack('meta')
 </head>
 <body>
