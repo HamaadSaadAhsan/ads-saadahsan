@@ -137,20 +137,20 @@
     });
     var gtmLoaded = false;
 
-    function loadGTM() {
+    function loadGTM(trigger) {
         if (gtmLoaded) return;
         gtmLoaded = true;
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js', gtm_load_trigger: trigger.type});
             var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
             j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&lt=' + trigger.type;
             f.parentNode.insertBefore(j, f)
         })(window, document, 'script', 'dataLayer', 'GTM-WVQWJKL')
     }
 
-    ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click'].forEach(function (e) {
+    ['mousedown', 'keydown', 'scroll', 'touchstart', 'click'].forEach(function (e) {
         document.addEventListener(e, loadGTM, {once: true, passive: true})
     });
 </script>

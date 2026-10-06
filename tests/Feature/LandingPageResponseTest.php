@@ -58,5 +58,7 @@ class LandingPageResponseTest extends TestCase
 
         $response->assertSee('document.addEventListener(e, loadGTM, {once: true, passive: true})', false);
         $response->assertDontSee('setTimeout(loadGTM', false);
+        $response->assertSee("['mousedown', 'keydown', 'scroll', 'touchstart', 'click']", false);
+        $response->assertDontSee("'mousemove'", false);
     }
 }
