@@ -41,29 +41,30 @@
             </div>
         </div>
 
-        <div class="gr-embed-wrapper">
-            <iframe
-                id="gr-embed"
-                data-src="{{ $embedUrl }}"
-                width="100%"
-                height="480"
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Our Google Reviews"
-            ></iframe>
+        <div class="gr-embed-wrapper" id="gr-map">
+            <button type="button" class="gr-map-facade" id="gr-map-load" data-src="{{ $embedUrl }}">
+                <span class="gr-map-pin" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                </span>
+                <span class="gr-map-title">Show our office on Google Maps</span>
+                <span class="gr-map-note">Loads the interactive map and our {{ number_format($total) }} Google reviews</span>
+            </button>
         </div>
         <script>
             (function () {
-                var frame = document.getElementById('gr-embed');
-                if (!frame) return;
-                var load = function () { if (!frame.src) frame.src = frame.dataset.src; };
-                if (!('IntersectionObserver' in window)) { load(); return; }
-                var observer = new IntersectionObserver(function (entries) {
-                    if (entries[0].isIntersecting) { load(); observer.disconnect(); }
-                }, {rootMargin: '300px 0px'});
-                observer.observe(frame);
+                var button = document.getElementById('gr-map-load');
+                if (!button) return;
+                button.addEventListener('click', function () {
+                    var frame = document.createElement('iframe');
+                    frame.src = button.dataset.src;
+                    frame.width = '100%';
+                    frame.height = '480';
+                    frame.style.border = '0';
+                    frame.allowFullscreen = true;
+                    frame.referrerPolicy = 'no-referrer-when-downgrade';
+                    frame.title = 'Our Google Reviews';
+                    button.replaceWith(frame);
+                }, {once: true});
             })();
         </script>
 
@@ -89,9 +90,17 @@
 .gr-total{font-size:14px;color:rgba(255,255,255,.5)}
 .gr-embed-wrapper{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);position:relative}
 .gr-embed-wrapper iframe{display:block}
+.gr-map-facade{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;height:480px;padding:24px;border:0;cursor:pointer;text-align:center;font-family:inherit;color:var(--white);background-color:#202027;background-image:linear-gradient(rgba(201,169,98,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,98,.06) 1px,transparent 1px),radial-gradient(ellipse 50% 60% at 50% 50%,rgba(201,169,98,.12) 0%,transparent 70%);background-size:40px 40px,40px 40px,100% 100%;transition:background-color .3s}
+.gr-map-facade:hover,.gr-map-facade:focus-visible{background-color:#26262e}
+.gr-map-facade:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
+.gr-map-pin{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);color:var(--charcoal);box-shadow:0 10px 30px rgba(201,169,98,.25);transition:transform .3s}
+.gr-map-facade:hover .gr-map-pin{transform:translateY(-4px)}
+.gr-map-pin svg{width:30px;height:30px}
+.gr-map-title{font-family:'Cormorant Garamond','Cormorant Garamond Fallback',Georgia,serif;font-size:1.6rem;font-weight:600;line-height:1.2}
+.gr-map-note{font-size:14px;color:rgba(255,255,255,.6)}
 .gr-footer{text-align:center;margin-top:32px}
 .gr-view-all{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--gold);border:1px solid rgba(201,169,98,.3);padding:12px 28px;border-radius:50px;transition:background .3s,border-color .3s;text-decoration:none}
 .gr-view-all:hover{background:rgba(201,169,98,.1);border-color:var(--gold)}
 .gr-view-all svg{width:16px;height:16px}
-@media(max-width:640px){.gr-header{flex-direction:column;align-items:flex-start}.gr-embed-wrapper iframe{height:380px}}
+@media(max-width:640px){.gr-header{flex-direction:column;align-items:flex-start}.gr-embed-wrapper iframe,.gr-map-facade{height:380px}}
 </style>

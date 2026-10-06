@@ -42,13 +42,13 @@ class LandingPageResponseTest extends TestCase
         $response->assertSee('.hero-form', false);
     }
 
-    public function test_google_reviews_map_is_not_loaded_until_scrolled_into_view(): void
+    public function test_google_reviews_map_only_loads_when_visitor_clicks_to_show_it(): void
     {
         $response = $this->get('/argentina-citizenship-requirements');
 
-        $response->assertSee('id="gr-embed"', false);
-        $response->assertSee('data-src="https://www.google.com/maps/embed/v1/place', false);
+        $response->assertSee('<button type="button" class="gr-map-facade" id="gr-map-load" data-src="https://www.google.com/maps/embed/v1/place', false);
         $response->assertDontSee(' src="https://www.google.com/maps/embed', false);
+        $response->assertDontSee('IntersectionObserver', false);
         $response->assertSee('class="gr-stars-overall" role="img"', false);
     }
 
